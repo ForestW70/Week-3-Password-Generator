@@ -1,3 +1,61 @@
-* {
+body {
     background-color: blanchedalmond;
+}
+
+.content-container {
+    margin: 100px auto;
+    background-color: chocolate;
+    width: 50vw;
+    text-align: center;
+    padding: 75px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.content-container h1 {
+    font-size: 6vmax;
+}
+
+#password {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.char-num {
+    padding: 10px 0;
+}
+
+#generatorForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    display: inline;
+}
+
+.checkbox-container span {
+    display: block;
+    /* padding-top: 10px; */
+}
+
+.checkbox-option {
+    padding: 8px;
+    display: inline;
+}
+
+.checkbox-option label {
+    vertical-align: top;
+}
+
+#submit {
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 600px) {
+    .checkbox-option {
+        display: block;
+        padding: 2px;
+    }
 }
