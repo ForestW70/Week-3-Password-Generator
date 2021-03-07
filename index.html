@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Generator</title>
+</head>
+<body>
+
+    <div>
+        <h1>Generate your new password!</h1>
+
+        <span id="password"></span>
+
+        <form id="generatorForm">
+            <label for="charAmount">number of characters</label>
+            <input type="number" min="8" max="128" placeholder="8-128" id="charAmount">
+            
+
+            <input type="checkbox" id="strength" name="strength" value="strong">
+            <label for="strength">would you like a strong password?</label>
+            
+            <!-- <label for="strength">password strength:</label> -->
+            <!-- <select id="strength" name="strength">
+                <option value="weak">weak (not recomended)</option>
+                <option value="moderate">moderate</option>
+                <option value="strong">strong</option>
+
+            </select> -->
+
+            <button type="submit" id="submit">Generate your password!</button>
+
+        </form>
+
+
+    </div>
+    
+</body>
+<script src="assets/script.js"></script>
+</html>
