@@ -10,36 +10,42 @@
 <body>
 
     <div class="content-container">
+
         <h1>Generate your new password!</h1>
 
         <span id="password"></span>
 
+<!-- the form element here holds all of the user submitted info -->
         <form id="generatorForm">
+
+            <!-- creating a number selector input where the bounds are defined and displayed -->
             <div class="char-num">
                 <label for="charAmount">number of characters</label>
                 <input type="number" min="8" max="128" placeholder="8-128" id="charAmount">
             </div>
 
+            <!-- creating a container for all checkable options, tying them to each other and to the JS using their attributes -->
             <div class="checkbox-container">
+
                 <span>What characters would you like to include?</span>
 
                 <div class="checkbox-option">
-                    <label for="strength">Uppercase</label>
-                    <input type="checkbox" id="strength" name="strength" value="strong">
+                    <label for="upperCase">Uppercase</label>
+                    <input type="checkbox" id="upperCase" name="upperCase">
                 </div>
 
                 <div class="checkbox-option">
-                    <label for="strength">Numbers</label>
-                    <input type="checkbox" id="strength" name="strength" value="strong">
+                    <label for="numbers">Numbers</label>
+                    <input type="checkbox" id="numbers" name="numbers">
                 </div>
 
                 <div class="checkbox-option">
-                    <label for="strength">Symbols</label>
-                    <input type="checkbox" id="strength" name="strength" value="strong">
+                    <label for="symbols">Symbols</label>
+                    <input type="checkbox" id="symbols" name="symbols">
                 </div>
 
             </div>
-
+            <!-- submit button that is waiting to be pushed -->
             <button type="submit" id="submit">Generate your password!</button>
 
         </form>
@@ -48,5 +54,7 @@
     </div>
     
 </body>
+
+<!-- JavaScript -->
 <script src="assets/script.js"></script>
 </html>
