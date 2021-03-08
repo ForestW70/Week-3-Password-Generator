@@ -11,16 +11,20 @@
 
     <div class="content-container">
 
-        <h1>Generate your new password!</h1>
-
-        <span id="password"></span>
+        <h1>Need a new password?</h1>
+        <span class="sub-heading">Allow me to assist!</span>
+        
+        <div class="pass-box">
+            <p id="password">/* let's figure out how strong you want it to be */</p>
+        </div>
 
 <!-- the form element here holds all of the user submitted info -->
         <form id="generatorForm">
 
             <!-- creating a number selector input where the bounds are defined and displayed -->
             <div class="char-num">
-                <label for="charAmount">number of characters</label>
+                <label class="char-heading" for="charAmount">number of characters</label>
+                <br>
                 <input type="number" min="8" max="128" placeholder="8-128" id="charAmount">
             </div>
 

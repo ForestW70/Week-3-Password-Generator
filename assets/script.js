@@ -6,10 +6,10 @@ const form = document.getElementById('generatorForm');
 
 // Instead of making arrays with each indevidual character, 
 // I decided to procedurally generate the arrays based on their UTF-16 character value.
-
 const lowerCaseChars = charArrayGeneration(97, 122);
 const upperCaseChars = charArrayGeneration(65, 90);
 const numbersChars = charArrayGeneration(48, 57);
+
 // all of the symbols were not lined up next to each other on the character code sheet,
 // so I had to concat on 2 other arrays so that I grabbed all my desired symbols.
 const symbolsChars = charArrayGeneration(34, 47).concat(charArrayGeneration(58, 64)).concat(charArrayGeneration(91, 96));
@@ -45,17 +45,31 @@ form.addEventListener('submit', function(event) {
     const numbers = document.getElementById('numbers').checked;
     const symbols = document.getElementById('symbols').checked;
 
+    // checks to see if nothing was entered before they click submit,
+    // if so, return error message
+    if (!charAmount) {
+        password.innerText = "Please fill out the form!";
+        password.style = "color: red";
+        return;
+    }
+
+    password.style = "";
+
     // run the generate password function with the 4 variables above,
     // paste the result of that function within the HTML element "password".
-    password.innerText = generatePassword(charAmount, upperCase, numbers, symbols);
+    password.innerText = generatePassword(charAmount, {upperCase, numbers, symbols});
 });
 
 
 // function used to construct our password using our arrays and considering our variables.
-function generatePassword(charAmount, upperCase, numbers, symbols) {
+function generatePassword(charAmount, options) {
 
     // set new range variable to lower case characters as a default.
     let charSet = lowerCaseChars;
+
+    // linking variables to the options object's attributes by using deconstruction.
+    const { upperCase, numbers, symbols } = options;
+
 
     // check if variable is true (checked). 
     // if so, then concat on array of additional characters defined by the argument.

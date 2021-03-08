@@ -2,9 +2,11 @@ body {
     background-color: blanchedalmond;
 }
 
+/* background container for content */
 .content-container {
     margin: 100px auto;
     background-color: chocolate;
+    font-family: sans-serif;
     width: 50vw;
     text-align: center;
     padding: 75px;
@@ -13,47 +15,89 @@ body {
 }
 
 .content-container h1 {
-    font-size: 6vmax;
+    font-style: italic;
+    font-size: 4vmax;
+    /* vmax to take in cosideration the larger value of screen resolution */
+}
+
+.sub-heading {
+    padding-bottom: 50px;
+    font-size: 2vmax;
+}
+
+/* field where new password is pasted */
+.pass-box {
+    
 }
 
 #password {
     background-color: aliceblue;
-    padding: 5px;
-    border-radius: 15px;
+    border: 1px solid yellow;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 30px;
+    color: rgb(153, 140, 118);
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-break: anywhere;
+}
+
+/* this is the area where the user input fields are */
+#generatorForm {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .char-num {
     padding: 10px 0;
 }
 
-#generatorForm {
-    display: flex;
-    flex-direction: column;
+.char-heading {
+    font-size: 2vmax;
+    font-weight: bold;
 }
+
+#charAmount {
+    text-align: center;
+    padding-top: 3px;
+    margin: 10px auto;
+}
+
+
 
 .checkbox-container {
-    display: inline;
+    margin-bottom: 25px;
 }
 
+/* span is block to remain above on its own line */
 .checkbox-container span {
     display: block;
-    /* padding-top: 10px; */
+    font-size: 2vmax;
+    font-weight: bold;
+    margin: 10px auto;
 }
 
+/* inline so the check boxes appear side by side */
 .checkbox-option {
     padding: 8px;
-    display: inline;
+    display: inline-flex;
+    align-items: center;
 }
 
 .checkbox-option label {
-    vertical-align: top;
+    font-size: 10px;
+    font-weight: 200;
 }
 
 #submit {
     margin: 10px auto;
 }
 
-@media screen and (max-width: 600px) {
+
+/* checkboxes display in a colomn at this breakpoint */
+@media screen and (max-width: 675px) {
     .checkbox-option {
         display: block;
         padding: 2px;
