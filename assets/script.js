@@ -23,6 +23,7 @@ function generatePassword(charAmount, strength) {
     if (strength) {
         charSet = charSet.concat(upperCase);
     }
+    
     console.log("howdy");
 
     let newPassword = [];
