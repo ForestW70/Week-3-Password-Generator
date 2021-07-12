@@ -17,6 +17,6 @@ In the future I would like to change the <p> field that the password prints to i
 
 ## Relevant links
 
-![repo](https://github.com/ForestW70/hw3passwordgenerator)
-![live site](https://forestw70.github.io/hw3passwordgenerator/)
+[repo](https://github.com/ForestW70/hw3passwordgenerator)
+[live site](https://forestw70.github.io/hw3passwordgenerator/)
 
