@@ -3,6 +3,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 <!-- Original deployment date: March 7th, 2021 -->
 
 ## Table of Contents:
+- [This week's concepts](#this-weeks-concepts)
 - [Tech used](#tech-used)
 - [Project description](#project-description)
 - [Usage instructions](#usage-instructions)
@@ -15,16 +16,22 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 
 ### About This Project
 
+* # This weeks concepts:
+  1. JS functions
+  2. JS event listeners
+  3. JS objects, arrays
+  4. Deconstructed variables
+
 * # Tech used:
   1. HTML
   2. CSS
   3. JavaScript
 
 * # Project description:
-  I hope you are in need of hundreds of new passwords, because this generator is ready to turn them out.
+  Given a desire to generate new, complex passwords at a button's click, I created an app that will let you decide how complex of a password you need, then generate one for you.
 
 * # Usage instructions
-  Fill out user inputs and boxes to dictate how strong you would like the generated password to be. When you are ready, press the "generate" button and recieve your new password.
+  Fill out inputs and boxes to dictate how strong you would like the generated password to be. When you are ready, press the "generate" button and recieve your new password to copy and paste.
 
 * # Project installation
   1. Visit the deployment link
@@ -32,6 +39,8 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   3. Enjoy. 
      
 * # Additional comments
+(Mar/15/21)
+
   - Originally I wanted a dropdown box that a user could select an option that will be passed into the generate function, but I couldnt figure out how to taget its value as I would with the number picker, so I instead opted to use checkboxs where i could just look at the value through .checked. I like this tactic more though because i think I would have had issues formatting the conditional statement if I was not able to simply pass an is-true argument.
 
   - shoutout to "Web Dev Simplified" for giving me the idea of using the UTF-16 values and fromCharCode() to generate and decypher my arrays instead of typing them out manually. 
