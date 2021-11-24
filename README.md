@@ -67,5 +67,5 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   - ![Small screen](./assets/images/small-screen.png)
 
 * Links:
-  - [Repo page](https://github.com/ForestW70/hw3passwordgenerator)
-  - [Deployed page](https://forestw70.github.io/hw3passwordgenerator/)
+  - [Repo page](https://github.com/ForestW70/Week-3-Password-Generator)
+  - [Deployed page](https://forestw70.github.io/Week-3-Password-Generator/)
